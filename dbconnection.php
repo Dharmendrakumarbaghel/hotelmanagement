@@ -1,10 +1,11 @@
 <?php
-    $server="Localhost";
+    session_start();
+    $server="localhost";
     $username="root";
     $password="";
-    $dbname="demo";
+    $dbname="hotelmanagement";
     $conn=mysqli_connect($server,$username,$password,$dbname);
     if(!$conn){
-        echo "connection field";
+        echo "Connection field";
     }
 ?>
